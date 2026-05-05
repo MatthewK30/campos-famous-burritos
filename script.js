@@ -61,7 +61,7 @@ function closeLightbox() {
   lightbox.classList.remove('is-open');
   lightbox.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('no-scroll');
-  lightboxImage.src = '';
+  lightboxImage.removeAttribute('src');
 }
 
 lightboxClose?.addEventListener('click', closeLightbox);
