@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static marketing site for Campos Famous Burritos in Simi Valley, CA.",
   "scripts": {
-    "check": "node --check script.js",
+    "check": "node --check script.js && node --check menu-data.js",
     "serve": "python3 -m http.server 4173"
   }
 }

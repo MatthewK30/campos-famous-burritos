@@ -1,6 +1,6 @@
 # Campos Famous Burritos
 
-Static landing page for Campos Famous Burritos in Simi Valley, CA.
+Static multi-page website for Campos Famous Burritos in Simi Valley, CA.
 
 ## Local Preview
 
@@ -17,3 +17,4 @@ Then open `http://localhost:4173`.
 - Restaurant details and menu prices were sourced from the public online ordering menu and public business/menu listing pages.
 - Prices and availability can change; the site includes a visible note encouraging visitors to confirm before ordering.
 - The Google Maps section uses an embedded map rather than a copied map screenshot.
+- The menu page renders every listed item with a local image asset.
