@@ -4,6 +4,11 @@ const lightbox = document.querySelector('.lightbox');
 const lightboxImage = document.querySelector('.lightbox img');
 const lightboxCaption = document.querySelector('.lightbox-caption');
 const lightboxClose = document.querySelector('.lightbox-close');
+const blankLightboxImage = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+
+if (lightboxImage && !lightboxImage.getAttribute('src')) {
+  lightboxImage.src = blankLightboxImage;
+}
 
 if (menuButton && navLinks) {
   menuButton.addEventListener('click', () => {
@@ -38,7 +43,7 @@ function closeLightbox() {
   lightbox.classList.remove('is-open');
   lightbox.setAttribute('aria-hidden', 'true');
   document.body.classList.remove('no-scroll');
-  lightboxImage.removeAttribute('src');
+  lightboxImage.src = blankLightboxImage;
 }
 
 document.querySelectorAll('[data-lightbox-src]').forEach((button) => {
